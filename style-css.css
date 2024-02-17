@@ -1,0 +1,54 @@
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#seat-map {
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: #007bff;
+}
+
+#selection-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#selection-details p {
+    margin: 5px;
+}
+
+#book-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#book-btn:hover {
+    background-color: #0056b3;
+}

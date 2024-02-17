@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticket Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-poppins">
+    <header class="container mx-auto lg:px-8 px-2 lg:py-6 py-3">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <!-- <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a></a>
+                            <details>
+                                <summary>About</summary>
+                                <ul class="p-2">
+                                    <li><a>Our-Service</a></li>
+                                    <li><a>Privacy-Policy</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div> -->
+                <a class=" lg:text-4xl text-3xl lg:font-bold font-semibold">P-<span
+                        class="text-green-600">H</span>-Travels</a>
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+                <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                    <li><a class="text-green-500">Home</a></li>
+                    <li>
+                        <details>
+                            <summary>About</summary>
+                            <ul class="p-2">
+                                <li><a>Our-Service</a></li>
+                                <li><a>Privacy-Policy</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button
+                    class="btn bg-green-100 text-green-500 border-green-500 border-x-2 border-y-2 rounded-2xl lg:px-5">
+                    <div class="flex gap-2 justify-center items-center text-center">
+                        <div>
+                            <p class="text-lg">Bus</p>
+                        </div>
+                        <div>
+                            <img src="images/bus-icon.png" alt="">
+                        </div>
+                    </div>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- picture section -->
+
+        <section class="container mx-auto lg:px-8 px-2 lg:py-6 py-3">
+            <!-- pic   -->
+            <div class="lg:absolute">
+                <div
+                    class="text-center justify-center items-center flex-col flex  lg:h-[730px] h-[390px] lg:w-[1500px] w-[390px] bg-[linear-gradient(45deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./images/banner1.png)] bg-center bg-cover rounded-xl lg:mt-6 mt-2">
+                    <h2 class="text-white lg:text-7xl text-3xl font-semibold lg:font-extrabold  lg:mb-7 mb-4">End-to-End
+                        Travel with <br></h2>
+                    <h2><span class="text-[#1DD100] lg:text-7xl text-4xl font-semibold lg:font-extrabold">P
+                            Paribahan</span>
+                    </h2>
+                    <p class="text-white opacity-80 lg:mt-10 lg:mb-10 mt-5 mb-5">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Facilis ea impedit commodi animi <br> ducimus sapiente molestiae fugiat eum .
+                    </p>
+                    <button class="lg:mb-14 mb-3 text-lg font-medium border-none btn bg-[#1DD100]">Buy Tickets</button>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto lg:px-8 px-2 lg:py-6 py-3">
+            <div
+                class="lg:relative mt-5 lg:-bottom-[658px] lg:left-[135px] grid grid-cols-1 lg:grid-cols-3 lg:h-[150px]  lg:w-[1200px] gap-8">
+
+
+                <div
+                    class="drop-shadow-xl bg-white border-[#1DD100] border-b-4 flex gap-6 lg:p-10 p-2 items-center justify-center  rounded-3xl ">
+                    <div>
+                        <img src="images/people.png" alt="">
+                    </div>
+                    <div>
+
+                        <h3 class="text-3xl text-black font-medium mb-3">500K+</h3>
+                        <p class="text-base text-black font-medium"> Registered users</p>
+
+                    </div>
+                </div>
+
+
+
+
+                <div
+                    class="drop-shadow-xl bg-white border-[#1DD100] border-b-4 flex gap-6 lg:p-10 p-2 items-center justify-center  rounded-3xl ">
+                    <div>
+                        <img src="images/ticket-cupon.png" alt="">
+                    </div>
+                    <div>
+
+                        <h3 class="text-3xl text-black font-medium mb-3">1.7 lacks</h3>
+                        <p class="text-base text-black font-medium">Tickets sold</p>
+
+                    </div>
+                </div>
+
+
+
+
+                <div
+                    class="drop-shadow-xl bg-white border-[#1DD100] border-b-4 flex gap-6 lg:p-10 p-2 items-center justify-center  rounded-3xl ">
+                    <div>
+                        <img src="images/stoppage.png" alt="">
+                    </div>
+                    <div>
+
+                        <h3 class="text-3xl text-black font-medium mb-3">80K+</h3>
+                        <p class="text-base text-black font-medium">Rental partners</p>
+
+                    </div>
+                </div>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <!-- coupon section -->
+
+        <section class="container mx-auto lg:px-8 px-2 lg:py-6 py-3">
+
+            <div class="flex flex-col justify-center items-center text-center mb-20">
+                <h2 class="text-black lg:font-bold text-2xl font-semibold lg:text-5xl lg:mt-[800px]">Best offers for you</h2>
+            </div>
+            <!-- discount section -->
+
+            <div class=" grid grid-cols-1 lg:grid-cols-2 gap-7">
+
+                <div class="flex gap-10 bg-yellow-400 lg:h-[220px] h-[152px] rounded-3xl p-5 justify-center  items-center">
+                    <div class="text-black ">
+
+                        <h1 class="lg:text-4xl text-2xl font-semibold lg:font-bold">15% OFF</h1>
+                        <h3 class="text-xl mt-2 mb-2">on your next purchase</h3>
+                        <h3 class="text-lg opacity-85">use by january 2024</h3>
+
+                    </div>
+                    <div>
+                        <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class=" text-black">
+                        <h2 class="text-3xl lg:font-semibold">NEW15</h2>
+                        <h2 class="text-base opacity-85 mt-2">Coupon Code</h2>
+                    </div>
+                </div>
+                <div class="flex gap-10 bg-red-400 lg:h-[220px] h-[160px] rounded-3xl p-5 justify-center  items-center">
+                    <div class="text-black">
+
+                        <h1 class="lg:text-4xl text-2xl font-semibold lg:font-bold">20% OFF</h1>
+                        <h3 class="lg:text-xl mt-2 mb-2">on your next purchase</h3>
+                        <h3 class="text-lg opacity-85">use by january 2024</h3>
+
+                    </div>
+                    <div>
+                        <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class=" text-black">
+                        <h2 class="text-3xl font-semibold">Couple 20</h2>
+                        <h2 class="text-base opacity-85 mt-2">Coupon Code</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-center mt-16">
+                <button class="btn btn-outline btn-success">See All Offers</button>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
