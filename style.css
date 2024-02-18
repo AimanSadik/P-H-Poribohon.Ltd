@@ -1,0 +1,13 @@
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+    /* border: 1px solid green; */
+}
+
+.hr{
+    color: black;
+    border-radius: 4px;
+}
