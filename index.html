@@ -24,7 +24,7 @@
     <header class="container mx-auto lg:px-8 px-2 lg:py-6 py-3">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-                <!-- <div class="dropdown">
+                <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -34,7 +34,7 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
+                        <li><a onclick="goBack()">Home</a></li>
                         <li>
                             <a></a>
                             <details>
@@ -48,13 +48,13 @@
                         <li><a>Destination</a></li>
                         <li><a>Search</a></li>
                     </ul>
-                </div> -->
+                </div>
                 <a class=" lg:text-4xl text-3xl lg:font-bold font-semibold">P-<span
                         class="text-green-600">H</span>-Travels</a>
             </div>
             <div class="navbar-center hidden lg:flex ">
                 <ul class="menu menu-horizontal px-1 text-lg font-medium">
-                    <li><a class="text-green-500">Home</a></li>
+                    <li><a onclick="goBack()" class="text-green-500">Home</a></li>
                     <li>
                         <details>
                             <summary>About</summary>
@@ -86,7 +86,7 @@
 
         <!-- picture section -->
 
-        <section class="container mx-auto lg:px-8 px-2 lg:py-6 py-3 ">
+        <section id="banner-section" class="container mx-auto lg:px-8 px-2 lg:py-6 py-3 ">
             <!-- pic   -->
             <div class="lg:absolute">
                 <div
@@ -96,14 +96,15 @@
                     <h2><span class="text-[#1DD100] lg:text-7xl text-4xl font-semibold lg:font-extrabold">P
                             Paribahan</span>
                     </h2>
-                    <p class="text-white opacity-80 lg:mt-10 lg:mb-10 mt-5 mb-5">Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Facilis ea impedit commodi animi <br> ducimus sapiente molestiae fugiat eum .
-                    </p>
-                    <button class="lg:mb-14 mb-3 text-lg font-medium border-none btn bg-[#1DD100]">Buy Tickets</button>
+                    <p class="text-white opacity-80 lg:mt-10 lg:mb-10 mt-5 mb-5">Booking online bus tickets saves time,
+                        offering convenience and flexibility, ensuring hassle-free travel <br> arrangements while
+                        providing access to various routes and schedules.</p>
+                    <button onclick="purchase()"
+                        class="lg:mb-14 mb-3 text-lg font-medium border-none btn bg-[#1DD100]">Buy Tickets</button>
                 </div>
             </div>
         </section>
-        <section class="container mx-auto lg:px-8 px-2 lg:py-6 py-3 ">
+        <section id="three-div-section" class="container mx-auto lg:px-8 px-2 lg:py-6 py-3 ">
             <div
                 class="lg:relative mt-5 lg:-bottom-[658px] lg:left-[100px] grid grid-cols-1 lg:grid-cols-3 lg:h-[150px]  lg:w-[1200px] gap-8">
 
@@ -159,7 +160,7 @@
 
         <!-- coupon section -->
 
-        <section class="container mx-auto lg:px-8 px-2 lg:py-6 py-3">
+        <section id="discount-section" class="container mx-auto lg:px-8 px-2 lg:py-6 py-3">
 
             <div class="flex flex-col justify-center items-center text-center mb-8">
                 <h2 class="text-black lg:font-bold text-3xl font-semibold lg:text-5xl lg:mt-[690px] mt-3">Best offers
@@ -214,14 +215,13 @@
 
         <!-- third section -->
 
-        <section
-            class="border-green-600 bg-gray-200 border-y-4 rounded-3xl container mx-auto lg:px-8 px-2 lg:py-6 py-3">
+        <section id="ticket-section"
+            class="border-green-600 bg-gray-200 border-y-4 rounded-3xl container mx-auto lg:px-8 px-2 lg:py-6 py-3 hidden">
             <div class="flex flex-col justify-center items-center text-center lg:mt-20 mt-5">
                 <h2 class="text-4xl font-bold text-black lg:mb-9">P-<span class="text-green-600">H</span>-Paribahan</h2>
-                <p class="lg:text-lg text-black opacity-85 lg:mb-14 mb-5">Lorem ipsum dolor, sit amet consectetur
-                    adipisicing
-                    elit. Omnis
-                    eaque hic libero. Quasi, sapiente exercitationem?</p>
+                <p class="lg:text-lg text-black opacity-85 lg:mb-14 mb-5">Booking online bus tickets saves time,
+                    offering convenience and flexibility, ensuring hassle-free travel <br> arrangements while providing
+                    access to various routes and schedules.</p>
 
             </div>
 
@@ -387,8 +387,8 @@
 
                     </div>
 
-                                
-                                
+
+
 
 
 
@@ -398,7 +398,7 @@
                             <h2 class="text-lg">BDT <span class="text-lg">0</span></h2>
                         </div>
 
-                        <div class="justify-center items-center text-center"> 
+                        <div class="justify-center items-center text-center">
                             <input type="text" placeholder="Have any coupon?"
                                 class="input h-[50px] w-[200px] max-w-xs bg-gray-200" />
                             <button class="btn text-white text-lg bg-[#1DD100] border-none mt-3 mb-3">Apply</button>
@@ -415,53 +415,60 @@
 
                         <div>
                             <h3 class="text-xl font-medium mb-3">Passanger Name*</h3>
-                        <input type="text" placeholder="Enter Your Name"
-                            class="input h-[50px] w-full  bg-white" />
+                            <input type="text" placeholder="Enter Your Name" class="input h-[50px] w-full  bg-white" />
                         </div>
 
                         <div>
                             <h3 class="text-xl font-medium mb-3 mt-3">Phone number*</h3>
-                        <input type="number" placeholder="Enter Your Phone Number"
-                            class="input h-[50px] w-full bg-white" />
+                            <input type="number" placeholder="Enter Your Phone Number"
+                                class="input h-[50px] w-full bg-white" />
                         </div>
 
                         <div>
                             <h3 class="text-xl font-medium mb-3 mt-3">Email ID</h3>
-                        <input type="email" placeholder="Enter Your Email ID"
-                            class="input h-[50px] w-full bg-white" />
+                            <input type="email" placeholder="Enter Your Email ID"
+                                class="input h-[50px] w-full bg-white" />
                         </div>
 
-                            <div>
-                                <button class="btn text-white text-lg bg-[#1DD100] mt-6 w-full">Next</button>
-                            </div>
+                        <div>
+                            <button class="btn text-white text-lg bg-[#1DD100] mt-6 w-full">Next</button>
+                        </div>
 
-                            <div class="mt-2 flex gap-6 items-center justify-center">
+                        <div class="mt-2 flex gap-6 items-center justify-center">
 
-                                <h2 class="text-black text-xs opacity-90">Terms and Conditions</h2>
-                                <h2 class="text-black text-xs opacity-90">Cancellation Policy</h2>
+                            <h2 class="text-black text-xs opacity-90">Terms and Conditions</h2>
+                            <h2 class="text-black text-xs opacity-90">Cancellation Policy</h2>
 
-                            </div>
+                        </div>
                     </div>
-
-
                 </div>
-
-
 
             </div>
 
+            <div>
+                <button onclick="goBack()" class="btn text-white text-lg bg-[#1DD100] mt-6 w-[200px]">
+                    <i id="back-button" class="fa-light fa-left-long"></i>Back</button>
 
-
-
-
+            </div>
 
         </section>
+
+        
+        
     </main>
 
-    <footer class="bg-black text-white h-[500px] w-full container mx-auto lg:px-8 px-2 lg:py-6 py-3">
-        
+    <footer id="footer-section"
+        class="bg-black rounded-3xl text-white h-[300px] w-full container mx-auto lg:px-8 px-2 lg:py-6 py-3">
+
     </footer>
     <script src="app.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
