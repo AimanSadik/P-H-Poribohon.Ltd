@@ -22,7 +22,7 @@
 
 <body class="font-poppins">
     <header class="container mx-auto lg:px-8 px-2 lg:py-6 py-3">
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 ">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -84,9 +84,9 @@
             </div>
         </div>
 
-        <!-- picture section -->
+        <!-- background section -->
 
-        <section id="banner-section" class="container mx-auto lg:px-8 px-2 lg:py-6 py-3 ">
+        <section id="banner-section" class="container mx-auto lg:px-8 px-2 lg:py-6 py-3  ">
             <!-- pic   -->
             <div class="lg:absolute">
                 <div
@@ -104,7 +104,9 @@
                 </div>
             </div>
         </section>
-        <section id="three-div-section" class="container mx-auto lg:px-8 px-2 lg:py-6 py-3 ">
+
+        <!-- three div sectionnnn -->
+        <section id="three-div-section" class="container mx-auto lg:px-8 px-2 lg:py-6 py-3">
             <div
                 class="lg:relative mt-5 lg:-bottom-[658px] lg:left-[100px] grid grid-cols-1 lg:grid-cols-3 lg:h-[150px]  lg:w-[1200px] gap-8">
 
@@ -187,16 +189,16 @@
                         <h2 class="text-base opacity-85 mt-2">Coupon Code</h2>
                     </div>
                 </div>
-                <div class="flex gap-10 bg-red-400 lg:h-[220px] h-[177px] rounded-3xl p-5 justify-center  items-center">
+                <div class="flex gap-10 bg-red-400 lg:h-[220px] h-[127px] rounded-3xl p-5 justify-center  items-center">
                     <div class="text-black">
 
-                        <h1 class="lg:text-4xl text-lg font-semibold lg:font-bold">20% OFF</h1>
+                        <h1 class="lg:text-4xl lg:font-bold">20% OFF</h1>
                         <h3 class="lg:text-xl lg:mt-2 lg:mb-2">on your next purchase</h3>
                         <h3 class="lg:text-lg opacity-85">use by january 2024</h3>
 
                     </div>
                     <div>
-                        <img class="w-[77px]" src="images/cupon-devider.png" alt="">
+                        <img src="images/cupon-devider.png" alt="">
                     </div>
                     <div class=" text-black">
                         <h2 class="text-3xl font-semibold">Couple 20</h2>
@@ -242,7 +244,8 @@
                         </div>
                         <div>
                             <button class="btn bg-lime-200 text-green-500 flex gap-1">
-                                <img src="images/seat-green.png" alt=""><span id="seat-left" class="">40</span> Seats left</button>
+                                <img src="images/seat-green.png" alt=""><span id="seat-left" class="">40</span> Seats
+                                left</button>
                         </div>
                     </div>
 
@@ -305,50 +308,90 @@
 
                         <div class="grid grid-cols-2 mt-3 gap-6">
 
-                            <button id="A1" class="btn-seat lg:h-11 rounded-lg ">A1</button>
-                            <button id="A2" class="btn-seat lg:h-11 rounded-lg">A2</button>
-                            <button id="B1" class="btn-seat lg:h-11 rounded-lg">B1</button>
-                            <button id="B2" class="btn-seat lg:h-11 rounded-lg">B2</button>
-                            <button id="C1" class="btn-seat lg:h-11 rounded-lg">C1</button>
-                            <button id="C2" class="btn-seat lg:h-11 rounded-lg">C2</button>
-                            <button id="D1" class="btn-seat lg:h-11 rounded-lg">D1</button>
-                            <button id="D2" class="btn-seat lg:h-11 rounded-lg">D2</button>
-                            <button id="E1" class="btn-seat lg:h-11 rounded-lg">E1</button>
-                            <button id="E2" class="btn-seat lg:h-11 rounded-lg">E2</button>
-                            <button id="F1" class="btn-seat lg:h-11 rounded-lg">F1</button>
-                            <button id="F2" class="btn-seat lg:h-11 rounded-lg">F2</button>
-                            <button id="G1" class="btn-seat lg:h-11 rounded-lg">G1</button>
-                            <button id="G2" class="btn-seat lg:h-11 rounded-lg">G2</button>
-                            <button id="H1" class="btn-seat lg:h-11 rounded-lg">H1</button>
-                            <button id="H2" class="btn-seat lg:h-11 rounded-lg">H2</button>
-                            <button id="I1" class="btn-seat lg:h-11 rounded-lg">I1</button>
-                            <button id="I2" class="btn-seat lg:h-11 rounded-lg">I2</button>
-                            <button id="J1" class="btn-seat lg:h-11 rounded-lg">J1</button>
-                            <button id="J2" class="btn-seat lg:h-11 rounded-lg">J2</button>
+                            <button onclick="addItem('Button1', 'Economy')" id="A1"
+                                class="btn-seat lg:h-11 rounded-lg">A1</button>
+                            <button onclick="addItem('Button2', 'Economy')" id="A2"
+                                class="btn-seat lg:h-11 rounded-lg">A2</button>
+                            <button onclick="addItem('Button3', 'Economy')" id="B1"
+                                class="btn-seat lg:h-11 rounded-lg">B1</button>
+                            <button onclick="addItem('Button4', 'Economy')" id="B2"
+                                class="btn-seat lg:h-11 rounded-lg">B2</button>
+                            <button onclick="addItem('Button5', 'Economy')" id="C1"
+                                class="btn-seat lg:h-11 rounded-lg">C1</button>
+                            <button onclick="addItem('Button6', 'Economy')" id="C2"
+                                class="btn-seat lg:h-11 rounded-lg">C2</button>
+                            <button onclick="addItem('Button7', 'Economy')" id="D1"
+                                class="btn-seat lg:h-11 rounded-lg">D1</button>
+                            <button onclick="addItem('Button8', 'Economy')" id="D2"
+                                class="btn-seat lg:h-11 rounded-lg">D2</button>
+                            <button onclick="addItem('Button9', 'Economy')" id="E1"
+                                class="btn-seat lg:h-11 rounded-lg">E1</button>
+                            <button onclick="addItem('Button10', 'Economy')" id="E2"
+                                class="btn-seat lg:h-11 rounded-lg">E2</button>
+                            <button onclick="addItem('Button11', 'Economy')" id="F1"
+                                class="btn-seat lg:h-11 rounded-lg">F1</button>
+                            <button onclick="addItem('Button12', 'Economy')" id="F2"
+                                class="btn-seat lg:h-11 rounded-lg">F2</button>
+                            <button onclick="addItem('Button13', 'Economy')" id="G1"
+                                class="btn-seat lg:h-11 rounded-lg">G1</button>
+                            <button onclick="addItem('Button14', 'Economy')" id="G2"
+                                class="btn-seat lg:h-11 rounded-lg">G2</button>
+                            <button onclick="addItem('Button15', 'Economy')" id="H1"
+                                class="btn-seat lg:h-11 rounded-lg">H1</button>
+                            <button onclick="addItem('Button16', 'Economy')" id="H2"
+                                class="btn-seat lg:h-11 rounded-lg">H2</button>
+                            <button onclick="addItem('Button17', 'Economy')" id="I1"
+                                class="btn-seat lg:h-11 rounded-lg">I1</button>
+                            <button onclick="addItem('Button18', 'Economy')" id="I2"
+                                class="btn-seat lg:h-11 rounded-lg">I2</button>
+                            <button onclick="addItem('Button19', 'Economy')" id="J1"
+                                class="btn-seat lg:h-11 rounded-lg">J1</button>
+                            <button onclick="addItem('Button20', 'Economy')" id="J2"
+                                class="btn-seat lg:h-11 rounded-lg">J2</button>
 
                         </div>
                         <div class="grid grid-cols-2 mt-3  gap-6 ">
 
-                            <button id="A3" class="btn-seat lg:h-11 rounded-lg">A3</button>
-                            <button id="A4" class="btn-seat lg:h-11 rounded-lg">A4</button>
-                            <button id="B3" class="btn-seat lg:h-11 rounded-lg">B3</button>
-                            <button id="B4" class="btn-seat lg:h-11 rounded-lg">B4</button>
-                            <button id="C3" class="btn-seat lg:h-11 rounded-lg">C3</button>
-                            <button id="C4" class="btn-seat lg:h-11 rounded-lg">C4</button>
-                            <button id="D3" class="btn-seat lg:h-11 rounded-lg">D3</button>
-                            <button id="D4" class="btn-seat lg:h-11 rounded-lg">D4</button>
-                            <button id="E3" class="btn-seat lg:h-11 rounded-lg">E3</button>
-                            <button id="E4" class="btn-seat lg:h-11 rounded-lg">E4</button>
-                            <button id="F3" class="btn-seat lg:h-11 rounded-lg">F3</button>
-                            <button id="F4" class="btn-seat lg:h-11 rounded-lg">F4</button>
-                            <button id="G3" class="btn-seat lg:h-11 rounded-lg">G3</button>
-                            <button id="G4" class="btn-seat lg:h-11 rounded-lg">G4</button>
-                            <button id="H3" class="btn-seat lg:h-11 rounded-lg">H3</button>
-                            <button id="H4" class="btn-seat lg:h-11 rounded-lg">H4</button>
-                            <button id="I3" class="btn-seat lg:h-11 rounded-lg">I3</button>
-                            <button id="I4" class="btn-seat lg:h-11 rounded-lg">I4</button>
-                            <button id="J3" class="btn-seat lg:h-11 rounded-lg">J3</button>
-                            <button id="J4" class="btn-seat lg:h-11 rounded-lg">J4</button>
+                            <button onclick="addItem('Button21', 'Economy')" id="A3"
+                                class="btn-seat lg:h-11 rounded-lg">A3</button>
+                            <button onclick="addItem('Button22', 'Economy')" id="A4"
+                                class="btn-seat lg:h-11 rounded-lg">A4</button>
+                            <button onclick="addItem('Button23', 'Economy')" id="B3"
+                                class="btn-seat lg:h-11 rounded-lg">B3</button>
+                            <button onclick="addItem('Button24', 'Economy')" id="B4"
+                                class="btn-seat lg:h-11 rounded-lg">B4</button>
+                            <button onclick="addItem('Button25', 'Economy')" id="C3"
+                                class="btn-seat lg:h-11 rounded-lg">C3</button>
+                            <button onclick="addItem('Button26', 'Economy')" id="C4"
+                                class="btn-seat lg:h-11 rounded-lg">C4</button>
+                            <button onclick="addItem('Button27', 'Economy')" id="D3"
+                                class="btn-seat lg:h-11 rounded-lg">D3</button>
+                            <button onclick="addItem('Button28', 'Economy')" id="D4"
+                                class="btn-seat lg:h-11 rounded-lg">D4</button>
+                            <button onclick="addItem('Button29', 'Economy')" id="E3"
+                                class="btn-seat lg:h-11 rounded-lg">E3</button>
+                            <button onclick="addItem('Button30', 'Economy')" id="E4"
+                                class="btn-seat lg:h-11 rounded-lg">E4</button>
+                            <button onclick="addItem('Button31', 'Economy')" id="F3"
+                                class="btn-seat lg:h-11 rounded-lg">F3</button>
+                            <button onclick="addItem('Button32', 'Economy')" id="F4"
+                                class="btn-seat lg:h-11 rounded-lg">F4</button>
+                            <button onclick="addItem('Button33', 'Economy')" id="G3"
+                                class="btn-seat lg:h-11 rounded-lg">G3</button>
+                            <button onclick="addItem('Button34', 'Economy')" id="G4"
+                                class="btn-seat lg:h-11 rounded-lg">G4</button>
+                            <button onclick="addItem('Button35', 'Economy')" id="H3"
+                                class="btn-seat lg:h-11 rounded-lg">H3</button>
+                            <button onclick="addItem('Button36', 'Economy')" id="H4"
+                                class="btn-seat lg:h-11 rounded-lg">H4</button>
+                            <button onclick="addItem('Button37', 'Economy')" id="I3"
+                                class="btn-seat lg:h-11 rounded-lg">I3</button>
+                            <button onclick="addItem('Button38', 'Economy')" id="I4"
+                                class="btn-seat lg:h-11 rounded-lg">I4</button>
+                            <button onclick="addItem('Button39', 'Economy')" id="J3"
+                                class="btn-seat lg:h-11 rounded-lg">J3</button>
+                            <button onclick="addItem('Button40', 'Economy')" id="J4"
+                                class="btn-seat lg:h-11 rounded-lg">J4</button>
 
                         </div>
 
@@ -361,25 +404,16 @@
                 <div class="">
                     <h1 class=" text-3xl font-semibold mt-4 ">Confirm Your Seat..</h1>
                     <hr class="mt-3 mb-3">
-                    <div class="bg-gray-200 rounded-2xl lg:p-6 mx-auto">
+                    <!-- div of appendChild -->
+                    <div id="booking-sit" class="bg-gray-200 rounded-2xl lg:p-6 mx-auto">
+                        <!-- <th class="text-xl font-semibold">Seat <span id="seat-count"
+                            class="h-3 w-10 rounded-full bg-green-400 gap-2"> 0 </span></th> -->
+                        <div class="flex text-2xl font-semibold justify-between mb-3">
+                            <p>Seat <span id="seat-count" class="h-3 w-10 rounded-full bg-green-400 gap-2">0</span></p>
+                            <p>Class</p>
+                            <p>Price</p>
 
-                        <table class="">
-                            <thead>
-                                <tr class="">
-                                    <th class="text-xl font-semibold">Seat <span id="seat-count" class="h-3 w-10 rounded-full bg-green-400 gap-2"> 0 </span></th>
-                                    <th class="text-xl font-semibold">Class</th>
-                                    <th class="text-xl font-semibold">Price</th>
-
-                                </tr>
-
-                            </thead>
-
-                            <tbody class="">
-                                
-
-                            </tbody>
-
-                        </table>
+                        </div>
 
                     </div>
 
@@ -391,20 +425,25 @@
                     <div class="mt-4">
                         <div class="flex justify-between ">
                             <h2 class="text-xl font-semibold">Total Price</h2>
-                            <h2 class="text-lg">BDT <span class="text-lg">0</span></h2>
+                            <h2 class="text-lg">BDT <span id="totalCost" class="text-lg">0</span></h2>
                         </div>
 
                         <div class="justify-center items-center text-center">
-                            <input type="text" placeholder="Have any coupon?"
-                                class="input h-[50px] w-[200px] max-w-xs bg-gray-200" />
-                            <button class="btn text-white text-lg bg-[#1DD100] border-none mt-3 mb-3 uppercase">Apply</button>
+                            <input type="text" id="coupon-input" placeholder="Have any coupon?"
+                                class="input h-[50px] w-[200px] max-w-xs bg-gray-200 uppercase" />
+                            <button onclick='applyCoupon()' id="btn-apply"
+                                class="btn text-white text-lg bg-[#1DD100] border-none mt-3 mb-3">Apply</button>
+
+
 
                         </div>
 
-                        <div class="flex justify-between ">
+                        <div class="flex justify-between mt-3">
                             <h2 class="text-xl font-semibold">Grand Price</h2>
-                            <h2 class="text-lg">BDT <span class="text-lg">0</span></h2>
+                            <h2 class="text-lg">BDT <span id="grandTotal" class="text-lg">0</span></h2>
                         </div>
+
+                        <div id="notification" class="notification"></div>
 
                     </div>
                     <div class="bg-gray-300 rounded-2xl mt-5 p-5">
@@ -416,8 +455,8 @@
 
                         <div>
                             <h3 class="text-xl font-medium mb-3 mt-3">Phone number*</h3>
-                            <input type="number" placeholder="Enter Your Phone Number"
-                                class="input h-[50px] w-full bg-white" />
+                            <input type="number" id="number" onchange="checkNumberValidity()"
+                                placeholder="Enter Your Phone Number" class="input h-[50px] w-full bg-white" />
                         </div>
 
                         <div>
@@ -426,8 +465,31 @@
                                 class="input h-[50px] w-full bg-white" />
                         </div>
 
-                        <div>
-                            <button class="btn text-white text-lg bg-[#1DD100] mt-6 w-full">Next</button>
+                        <div class="flex flex-col justify-center text-center items-center mx-auto">
+                            <!-- <button onclick="confirmPurchase()" id="nextButton" disabled
+                                class="btn text-white text-lg bg-[#1DD100] mt-6 w-full">Next</button> -->
+
+                            <a href="#my_modal_8" id="next-Button"
+                                class="btn text-white text-lg bg-[#1DD100] mt-6 w-full" disabled>Next</a>
+
+                            <div class="modal" role="dialog" id="my_modal_8">
+                                <div class="modal-box">
+                                    <div class=" justify-center items-center text-center flex flex-col">
+                                        <img src="images/success.png" alt="">
+                                    </div>
+                                    <h3 class="font-bold text-2xl text-green-500 mt-5">SUCCESS</h3>
+                                    <p class="py-4 text-lg font-medium mt-5 mb-3">Thank you for booking Our Bus Seats.
+                                        <br>
+                                        We are working hard to find the best service and deals for you.
+                                    </p>
+                                    <p class="">Shortly you will find a confirmation in your email</p>
+                                    <div
+                                        class="modal-action  mt-5 justify-center items-center text-center flex flex-col">
+                                        <a href="#"
+                                            class="btn font-normal px-10 text-base bg-green-500 text-white rounded-full">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="mt-2 flex gap-6 items-center justify-center">
@@ -449,8 +511,6 @@
 
         </section>
 
-        
-        
     </main>
 
     <footer id="footer-section"
@@ -461,10 +521,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-

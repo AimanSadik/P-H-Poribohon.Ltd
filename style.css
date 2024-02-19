@@ -1,13 +1,28 @@
-table{
+table {
     border-collapse: collapse;
 }
 
-th, td{
+th,
+td {
     padding: 10px;
     /* border: 1px solid green; */
 }
 
-.hr{
+.hr {
     color: black;
     border-radius: 4px;
+}
+
+
+.notification {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
 }
