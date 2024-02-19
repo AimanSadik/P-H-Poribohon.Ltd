@@ -152,8 +152,9 @@ document.getElementById("I4").addEventListener("click", function (e) {
 document.getElementById("J3").addEventListener("click", function (e) {
     e.target.style.backgroundColor = "lime";
 });
-document.getElementById("J4").addEventListener("click", function (e) {
+const button = document.getElementById("J4").addEventListener("click", function (e) {
     e.target.style.backgroundColor = "lime";
+    button.disabled = true;
 });
 
 
@@ -218,7 +219,7 @@ for (const btn of allBtn) {
 function applyCoupon() {
 
     const couponInputValue = document.getElementById("coupon-input").value;
-    const getNotification = document.getElementById("notification");
+    // const getNotification = document.getElementById("notification");
 
     const convertedGrandTotal = parseFloat(document.getElementById("grandTotal").innerText);
 
@@ -229,16 +230,16 @@ function applyCoupon() {
 
         discountedGrandTotal -= convertedGrandTotal * 0.15;
 
-        getNotification.innerText = "Discount applied successfully";
-        getNotification.style.display = "block";
+        // getNotification.innerText = "Discount applied successfully";
+        // getNotification.style.display = "block";
 
     } else if (couponInputValue === "Couple 20") {
         // Apply 20% discount
 
         discountedGrandTotal -= convertedGrandTotal * 0.20;
 
-        getNotification.innerText = "Discount applied successfully";
-        getNotification.style.display = "block";
+        // getNotification.innerText = "Discount applied successfully";
+        // getNotification.style.display = "block";
     } else {
 
         alert("Invalid coupon code!");
@@ -247,8 +248,8 @@ function applyCoupon() {
     document.getElementById("grandTotal").innerText = discountedGrandTotal;
 
 
-    document.getElementById("coupon-input").value = "";
-    document.getElementById("coupon-input").style.display = "none";
+    document.getElementById("coupon-input").value = " ";
+    document.getElementById("coupon-input").style.display ='none';
     document.getElementById("btn-apply").style.display = "none";
 };
 
@@ -312,7 +313,7 @@ function checkNumberValidity() {
         nextButton.removeAttribute('disabled');
     }
     else {
-        nextButton.setAttributeAttribute('disabled', 'disabled');
+        nextButton.setAttribute('disabled');
     }return 0;
 
 }
